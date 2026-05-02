@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lol</title>
+  <style>
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    
+    .blink-text {
+        animation: blink 1s infinite;
+    }
+    
+    @keyframes rainbow {
+        0% { color: red; }
+        17% { color: orange; }
+        33% { color: yellow; }
+        50% { color: green; }
+        67% { color: blue; }
+        83% { color: indigo; }
+        100% { color: violet; }
+    }
+    
+    .rainbow-text {
+        animation: rainbow 3s linear infinite;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .wavy {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    
+    .wavy span {
+        display: inline-block;
+        animation: shake 1s ease-in-out infinite;
+        animation-delay: calc(0.05s * var(--i));
+    }
+    
+    @keyframes shake {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+    }
+    .shadow-text {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-shadow: 4px 4px 5px black;
+}
+  </style>
+</head>
+
+<body>
+  <p>Text</p>
+  <p><strong>Strong</strong></p>
+  <p><i><strong>Italic strong</strong></i></p>
+  <p><b>Bold</b></p>
+  <p><i>Italic</i></p>
+  <p><b><i>Bold italic</i></b></p>
+  <p><em>Emphasized</em></p>
+  <p><b><em>Bold emphasized</em></b></p>
+  <p><u>Underlined</u></p>
+  <p><b><u>Bold underlined</u></b></p>
+  <p><i><u>Italic underline</u></i></p>
+  <p><b><i><u>Bold italic underline</u></i></b></p>
+  <p><strong><u>Strong underlined</u></strong></p>
+  <p><i><strong><u>Italic strong underlined</u></strong></i></p>
+  <p><s>Striketrough</s></p>
+  <p><b><s>Bold striketrough</s></b></p>
+  <p><i><s>Italic striketrough</s></i></p>
+  <p><b><i><s>Bold italic striketrough</s></i></b></p>
+  <p><strong><s>Strong striketrough</s></strong></p>
+  <p><i><strong><s>Italic strong striketrough</s></strong></i></p>
+  <p><u><s>Underlined striketrough</s></u></p>
+  <p><b><u><s>Bold underlined striketrough</s></u></b></p>
+  <p><i><u><s>Italic underlined striketrough</s></u></i></p>
+  <p><b><i><u><s>Bold italic underlined striketrough</s></u></i></b></p>
+  <p><strong><u><s>Strong underlined striketrough</s></u></strong></p>
+  <p><i><strong><u><s>Italic strong underlined striketrough</s></u></strong></i></p>
+  <p><mark>Marked</mark></p>
+  <p>Text<sup>Superscript</sup></p>
+  <p>Text<sup><mark>Marked superscript</mark></sup></p>
+  <p>Text<sub>Subscript</sub></p>
+  <p>Text<sub><mark>Marked subscript</mark></sub></p>
+  <p>Text<sup><i><strong><u><s><mark>Italic strong underlined striketroughed marked superscript<sub><sup><i><strong><u><s><mark>Italic strong underlined striketroughed marked superscripted subscript</mark></s></u></strong></i></sub></mark></s></u></strong></i></sup></p>
+  <p class="blink-text">Blink</p>
+  <p class="rainbow-text">Raindow</p>
+  <p class="wavy">
+  <span style="--i:0">W</span><span style="--i:1">a</span><span style="--i:2">v</span><span style="--i:3">y</span><span style="--i:4"> </span>
+  <span style="--i:5">t</span><span style="--i:6">e</span><span style="--i:7">x</span><span style="--i:8">t</span>
+  </p>
+  <p>&#x202E; Right-to-left text</p>
+  <p class="shadow-text">Shadow text</p>
+</body>
+
+</html>
