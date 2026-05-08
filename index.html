@@ -18,12 +18,13 @@
     
     @keyframes rainbow {
         0% { color: red; }
-        17% { color: orange; }
-        33% { color: yellow; }
-        50% { color: green; }
-        67% { color: blue; }
-        83% { color: indigo; }
-        100% { color: violet; }
+        14.2% { color: orange; }
+        28.4% { color: yellow; }
+        42.6% { color: green; }
+        56.8% { color: blue; }
+        71% { color: indigo; }
+        85.2% { color: violet; }
+        100% { color: red; }
     }
     
     .rainbow-text {
@@ -53,8 +54,46 @@
   font-weight: bold;
   font-family: Arial, sans-serif;
   color: black;
-  text-shadow: 4px 4px 5px black;
+  text-shadow: 2px 2px 2.5px gray;
 }
+    
+    .very-bold {
+        font-weight: 999;
+    }
+    .very-italic {
+        display: inline-block;
+        font-style: italic;
+        transform: skewX(-15deg);
+    }
+    .anti-italic {
+        font-style: normal;
+        transform: skewX(10deg);
+    }
+    .very-very-italic {
+        font-style: italic;
+        transform: skewX(-30deg);
+    }
+    .very-very-very-italic {
+        font-style: italic;
+        transform: skewX(-45deg);
+    }
+    .very-very-very-very-italic {
+        font-style: italic;
+        transform: skewX(-60deg);
+    }
+    .very-very-very-very-very-italic {
+        font-style: italic;
+        transform: skewX(-75deg);
+    }
+    .monospace {
+        font-family: monospace;
+    }
+    .large {
+        font-size: 2rem;
+    }
+    .very-large {
+        font-size: 3rem;
+    }
   </style>
 </head>
 
@@ -99,6 +138,35 @@
   </p>
   <p>&#x202E; Right-to-left text</p>
   <p class="shadow-text">Shadow text</p>
+  <p class="very-bold">Very bold</p>
+  <p class="very-italic">Very italic</p>
+  <p class="very-very-italic">Very very italic</p>
+  <p class="very-very-very-italic">Very very very italic</p>
+  <p class="very-very-very-very-italic">Very very very very italic</p>
+  <p class="very-very-very-very-very-italic">Very very very very very italic</p>
+  <p class="anti-italic">Anti-italic</p>
+  <p>Replace object: &#xFFFC;/&#xFFFD;</p>
+  <p></p>
+  <div>
+    <p>&#xFFFC;￻￻￻￻￻ &#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;￻&#xFFFC;</p>
+    <p>&#xFFFC;￻￻￻￻￻ &#xFFFC;￻￻￻&#xFFFC;￻&#xFFFC;</p>
+    <p>&#xFFFC;￻￻￻￻￻ &#xFFFC;￻￻￻&#xFFFC;￻&#xFFFC;</p>
+    <p>&#xFFFC;￻￻￻￻￻ &#xFFFC;￻￻￻&#xFFFC;￻&#xFFFC;</p>
+    <p>&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;￻ &#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;￻&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;</p>
+  </div>
+  <p class="monospace">Monospace</p>
+  <p class="monospace"><b>Bold monospace</b></p>
+  <p class="monospace"><i>Italic monospace</i></p>
+  <p class="monospace"><b><i>Bold italic monospace</i></b></p>
+  <p class="large">Large</p>
+  <p class="very-large">Very large</p>
+  <p style="
+  color: red;
+  font-weight: bold;
+  ">Red</p>
+  <p style="
+  color: green;
+  font-weight: bold;
+  ">Red?</p>
 </body>
-
 </html>
